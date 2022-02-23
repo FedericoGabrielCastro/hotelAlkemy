@@ -1,0 +1,13 @@
+// GETTING RECIPES
+export const GET_RECIPES = "GET_RECIPES"
+export const GET_RECIPES_SAGA = "GET_RECIPES_SAGA"
+
+// USER LOGIN/LOGOUT
+export const USER_LOGIN = "USER_LOGIN"
+export const USER_LOGOUT = "USER_LOGOUT"
+
+// LOADING
+export const LOADING = "LOADING"
+
+// SEARCH
+export const SEARCHING = "SEARCHING"
