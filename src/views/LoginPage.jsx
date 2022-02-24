@@ -2,20 +2,14 @@ import React, { useEffect } from 'react'
 import Axios from "axios"
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-// import * as Yup from "yup"
-// import swal from 'sweetalert';
-
-import { userLoginAction } from '../redux/actions/userAuthAction'
-import { setLoadingStatusAction } from '../redux/actions/setLoadingStatusAction'
 
 import logo from '../assets/logo.png'
-// import TextError from '../helpers/textError'
 import Loading from '../components/loading'
 import AnimatedPageRender from '../components/animatedPageRender'
 import LoginForm from '../components/loginForm'
 
 const LoginPage = () => {
-    
+
     const navigate = useNavigate()
 
     const loading = useSelector(store => store.setLoadingStatusReducer)

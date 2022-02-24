@@ -1,15 +1,27 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+
+import { userLogoutAction } from '../redux/actions/userAuthAction'
 
 const CustomNavbar = () => {
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+
+    const handleLogout = () => {
+        const logoutToken = window.localStorage.getItem("USER_TOKEN")
+        dispatch(userLogoutAction(logoutToken))
+        navigate("/login")
+    }
+
     return (
         <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {/* <img src={logo} alt="logo" height="50px"/> */}
             <h1 className="navbar-brand"> Hotel Alkemy &#174; </h1>
             </div>
-            <a className="navbar-brand" > Profile </a>
-            <a className='navbar-brand'> Logout </a>
+            <button className="btn btn-sm btn-outline-secondary" type="button"> profile </button> {"--"}
+            <button className="btn btn-sm btn-outline-secondary" type="button" onClick={handleLogout}> Logout </button>
         </nav>
     )
 }
