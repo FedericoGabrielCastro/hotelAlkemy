@@ -1,20 +1,22 @@
 import { USER_LOGIN, USER_LOGOUT } from "../types/types" 
 
-const initialState = true
+const initialState = false
 
 export const userAuthReducer = (state = initialState, { type, user }) => {
     switch (type) {
 
-        case USER_LOGIN:
-            if ( state === false) {
-                return user = true
+        case USER_LOGIN: 
+            {
+                const newState = user 
+                window.localStorage.setItem("USER_TOKEN", JSON.stringify(newState))
+                return !newState
             }
-            return state
-        case USER_LOGOUT:
-            if ( state === true) {
-                return user = false
+        case USER_LOGOUT: 
+            {
+                const newState = user 
+                window.localStorage.removeItem("USER_TOKEN", JSON.stringify(newState))
+                return !newState
             }
-            return state
 
         default:
             return state
