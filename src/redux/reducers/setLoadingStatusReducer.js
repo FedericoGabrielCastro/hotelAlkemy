@@ -1,6 +1,6 @@
 import { LOADING } from "../types/types"
 
-const initialState = false
+export const initialState = false
 
 export const setLoadingStatusReducer = (state = initialState, { type, loading }) => {
     switch (type) {
@@ -11,8 +11,6 @@ export const setLoadingStatusReducer = (state = initialState, { type, loading })
             } else {
                 return loading = false
             }
-            return state
-
         default:
             return state
     }

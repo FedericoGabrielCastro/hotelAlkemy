@@ -1,6 +1,6 @@
 import { USER_LOGIN, USER_LOGOUT } from "../types/types" 
 
-const initialState = false
+export const initialState = false
 
 export const userAuthReducer = (state = initialState, { type, user }) => {
     switch (type) {

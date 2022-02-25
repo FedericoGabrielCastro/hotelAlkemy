@@ -1,16 +1,19 @@
 import React from 'react'
 
-const Dish = ({image, title}) => {
+const Dish = ({image, title, option, doThis}) => {
   
     return (
-        <div className="card mb-3 ml-3 mr-3 col-12 col-sm-5 col-md-12 col-lg-5 col-xl-5 bg-dark">
-            <img className="card-img-top img-fluid" src={image} alt="Card image cap"/>
-            <div className="card-body">
-                <h4 className="card-title"> {title} </h4>
-                <p className="card-text">Some quick example text </p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+        <div className='container mt-3 col-12 col-sm-6 col-md-12 col-lg-6 col-xl-6'>
+            <div className="card bg-dark">
+                <img className="img-fluid.max-width: 50% height: auto" src={image} alt="Card image cap"/>
+                <div className="card-body text-white">
+                    <p className="card-title "> {title} </p>
+                    <button className="btn btn-sm btn-outline-secondary float-left"> ! </button>
+                    <button className="btn btn-sm btn-outline-secondary float-right" onClick={doThis}> { option }</button>
+
+                </div>
             </div>
-    </div>
+        </div>
     )
 }
 

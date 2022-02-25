@@ -1,9 +1,8 @@
 import { USER_LOGIN, USER_LOGOUT } from "../types/types";
 
-export const userLoginAction = (user, loading) => ({
+export const userLoginAction = (user) => ({
     type: USER_LOGIN,
-    user,
-    loading
+    user,    
 })
 
 export const userLogoutAction = (user) => ({

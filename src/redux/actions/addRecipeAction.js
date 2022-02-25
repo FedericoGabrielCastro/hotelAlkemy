@@ -1,11 +1,11 @@
 import { ADD_RECIPE, DELETE_RECIPE } from "../types/types";
 
-export const addRecipeAction = (id) => ({
+export const addRecipeAction = (menu) => ({
     type: ADD_RECIPE,
-    id
+    menu
 })
 
-export const removeRecipeAction = (id) => ({
+export const removeRecipeAction = (menu) => ({
     type: DELETE_RECIPE,
-    id
+    menu
 })

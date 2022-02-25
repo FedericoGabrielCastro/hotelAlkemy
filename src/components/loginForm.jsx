@@ -18,7 +18,9 @@ const LoginForm = () => {
  
     const initialValues = { 
         email: "",
-        password: ""
+        password: "",
+        age: ""
+
     }
 
     const validationSchema = Yup.object({
@@ -26,7 +28,9 @@ const LoginForm = () => {
             .email("Invalid email format")
             .required("Required"),
         password: Yup.string()
-            .required("Required")
+            .required("Required"),
+        age: Yup.number()
+            .typeError('you must specify a number')
     }) 
 
     // handle POST AXIOS + GET USER TOKEN
@@ -35,6 +39,7 @@ const LoginForm = () => {
         await Axios.post(`${process.env.REACT_APP_POST_USER_URL}`,{
             email:  values.email ,
             password: values.password,
+            age: values.age
         }).then(function (response) {
             dispatch(setLoadingStatusAction())
             dispatch(userLoginAction(response.data.token))
@@ -64,6 +69,11 @@ const LoginForm = () => {
                                 <label className="h5 form-label" htmlFor='password'> Password </label>
                                 <Field className="form-control" id="password" name="password" />
                                 <ErrorMessage component={TextError} name="password" />
+                            </div>
+                            <div className='forms-inputs mb-4'>
+                                <label className="h5 form-label" htmlFor='age'> Age </label>
+                                <Field className="form-control" id="age" name="age" />
+                                <ErrorMessage component={TextError} name="age" />
                             </div>
                             <button
                                 className='btn btn-dark w-100 '  

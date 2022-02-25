@@ -9,12 +9,14 @@ import { getRecipesReducer } from "./reducers/getRecipesReducer";
 import { userAuthReducer } from "./reducers/userAuthReducer";
 import { setLoadingStatusReducer } from "./reducers/setLoadingStatusReducer"; 
 import { setSearchReducer } from "./reducers/setSearchReducer";
+import { addRecipeReducer } from "./reducers/addRecipeReducer";
 
 const rootReducers = combineReducers({
     getRecipesReducer: getRecipesReducer, // getting recipes from api 
     userAuthReducer: userAuthReducer, // set status login/logout
     setLoadingStatusReducer: setLoadingStatusReducer, // set loading on/off
-    setSearchReducer: setSearchReducer // set search for recipes items
+    setSearchReducer: setSearchReducer, // set search for recipes items
+    addRecipeReducer: addRecipeReducer // add/remove item to menu
 })
 
 const sagaMiddleware = createSagaMiddleware()

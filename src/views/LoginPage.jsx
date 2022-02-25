@@ -25,7 +25,7 @@ const LoginPage = () => {
 
     return (
         <AnimatedPageRender>
-            <main className='vh-100 pt-5'>
+            <main className='vh-100 pt-2'>
                 <section className="container w-50">
                 <div className='text-center'>
                     <img className="mt-4 mb-4" src={logo} alt="logo" height="150px"/>

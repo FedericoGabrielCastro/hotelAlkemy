@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.0",
     "bootstrap": "4.6.0",
     "bootstrap-icons": "^1.8.1",
@@ -20,10 +21,18 @@
     "sweetalert": "^2.1.2",
     "yup": "^0.32.11"
   },
+  "jest": {
+    "verbose": true
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
+    "coverage": "react-scripts test --watchAll=false --env=jsdom --coverage",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3"
   }
 }
