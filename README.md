@@ -28,11 +28,11 @@ npm start
 🌟 You are all set!
 
 <p align="center">
-    <img width="400px" height="400" src="./assetsGithub/home.png" alt="home" />
-    <img width="400px" height="400" src="./assetsGithub/homeResponsive.png" alt="home responsive" />
-    <img width="400px" height="400" src="./assetsGithub/localStorage.png" alt="local storage" />
-    <img width="400px" height="400" src="./assetsGithub/login.png" alt="login" />
-    <img width="400px" height="400" src="./assetsGithub/loginValidation.png" alt="validation" />
-    <img width="400px" height="400" src="./assetsGithub/swal.png" alt="swal" />
-    <img width="400px" height="400" src="./assetsGithub/test.png" alt="test" />
+    <img width="400px" height="200" src="./assetsGithub/home.png" alt="home" />
+    <img width="400px" height="200" src="./assetsGithub/homeResponsive.png" alt="home responsive" />
+    <img width="400px" height="200" src="./assetsGithub/localStorage.png" alt="local storage" />
+    <img width="400px" height="200" src="./assetsGithub/login.png" alt="login" />
+    <img width="400px" height="200" src="./assetsGithub/loginValidation.png" alt="validation" />
+    <img width="400px" height="200" src="./assetsGithub/swal.png" alt="swal" />
+    <img width="800px" height="200" src="./assetsGithub/test.png" alt="test" />
 </p>
