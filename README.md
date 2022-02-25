@@ -1,6 +1,6 @@
 <p align="center">
-    <img width="200px" src="./assetsGithub/logo.png" align="center" alt="Hotel Alkemy" />
-    <hr width="75%"/>
+    <img width="200px" src="./assetsGithub/logo.png" alt="Hotel Alkemy" />
+    <hr width="100%"/>
     <h1 align="center">Hotel menu challenge</h1>
 </p>
 <p align="center">
@@ -26,3 +26,13 @@ npm start
 ```
 
 🌟 You are all set!
+
+<p align="center">
+    <img width="200px" height="200" src="./assetsGithub/home.png" alt="home" />
+    <img width="200px" height="200" src="./assetsGithub/homeResponsive.png" alt="home responsive" />
+    <img width="200px" height="200" src="./assetsGithub/localStorage.png" alt="local storage" />
+    <img width="200px" height="200" src="./assetsGithub/login.png" alt="login" />
+    <img width="200px" height="200" src="./assetsGithub/loginValidation.png" alt="validation" />
+    <img width="200px" height="200" src="./assetsGithub/swal.png" alt="swal" />
+    <img width="200px" height="200" src="./assetsGithub/test.png" alt="test" />
+</p>
